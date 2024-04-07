@@ -1,9 +1,24 @@
-function hello () {
-    console.log("Gd Morning");
+// function hello () {
+//     console.log("Gd Morning");
+// }
+
+// function namaste () {
+//     hello();
+// }
+
+// namaste();
+
+function one() {
+    return 1;
 }
 
-function namaste () {
-    hello();
+function two() {
+    return one() + one();
 }
 
-namaste();
+function three() {
+    let ans = two() + one();
+    console.log(ans);
+}
+
+three();
