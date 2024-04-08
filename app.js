@@ -53,8 +53,18 @@ function savetoDb (data, success, failure) {
     }
 }
 
-savetoDb("apna college", ()=> {
-    console.log("success: data saved");
+savetoDb("apna college", ()=>{
+    console.log("success data saved");
+    savetoDb("hello world", ()=> {
+        console.log("success2 data saved");
+        savetoDb("binay", ()=> {
+            console.log("success3 data saved");
+        }, ()=> {
+            console.log("weak3 connection failed");
+        })
+    }, ()=> {
+        console.log("weak2 data not saved");
+    })
 }, ()=> {
-console.log("weak connection data not saved")
+    console.log("weak connection data not saved")
 });
