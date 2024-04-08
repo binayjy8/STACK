@@ -8,17 +8,23 @@
 
 // namaste();
 
-function one() {
-    return 1;
-}
+// function one() {
+//     return 1;
+// }
 
-function two() {
-    return one() + one();
-}
+// function two() {
+//     return one() + one();
+// }
 
-function three() {
-    let ans = two() + one();
-    console.log(ans);
-}
+// function three() {
+//     let ans = two() + one();
+//     console.log(ans);
+// }
 
-three();
+// three();
+
+setTimeout( () => {
+    console.log("This is My village");
+}, 2000);
+
+console.log("hello......")
