@@ -37,3 +37,7 @@ function changeColor(color, delay, nextColorChange) {
         if(nextColorChange) nextColorChange();
     }, delay);
 }
+
+changeColor("greenYellow", 1000, ()=> {
+    changeColor("gray", 1000);
+});
