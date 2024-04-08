@@ -28,3 +28,12 @@
 // }, 2000);
 
 // console.log("hello......");
+
+h1 = document.querySelector("h1");
+
+function changeColor(color, delay, nextColorChange) {
+    setTimeout( ()=> {
+        h1.style.color = color;
+        if(nextColorChange) nextColorChange();
+    }, delay);
+}
