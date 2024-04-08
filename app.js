@@ -61,10 +61,10 @@ savetoDb("apna college", ()=> {
             console.log("success3: your data was saved");
         }, ()=> {
             console.log("failure3: weak connection data not saved");
-        })
+        });
     }, ()=> {
         console.log("failure2: weak connection data not saved");
-    })
+    });
 }, ()=> {
     console.log("failure: weak connection data not saved");
-})
+});
