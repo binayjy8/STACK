@@ -59,6 +59,11 @@ savetoDb("apna college", ()=>{
         console.log("success2 data saved");
         savetoDb("binay", ()=> {
             console.log("success3 data saved");
+            savetoDb("khuntapingu", ()=> {
+                console.log("success4");
+            }, ()=> {
+                console.log("bad connection");
+            })
         }, ()=> {
             console.log("weak3 connection failed");
         })
