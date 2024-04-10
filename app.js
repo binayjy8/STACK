@@ -132,3 +132,9 @@ call()
     console.log("promised rejected");
     console.log(err);
 });
+
+let hello =async ()=>{
+    return "namaste";
+}
+
+hello();
