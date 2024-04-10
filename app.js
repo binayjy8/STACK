@@ -40,7 +40,23 @@ function changeColor(color, delay) {
     });
 }
 
-
+changeColor("red", 1000)
+.then(()=>{
+    console.log("red color success");
+    return changeColor("yellow", 1000);
+})
+.then(()=>{
+    console.log("yellow color success");
+    return changeColor("gray", 1000);
+})
+.then(()=>{
+    console.log("gray success");
+    return changeColor("green", 1000);
+})
+.then(()=>{
+    console.log("green success");
+    return changeColor("green", 1000);
+});
 
 // changeColor("greenYellow", 1000, ()=> {
 //     changeColor("gray", 1000, ()=> {
