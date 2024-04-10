@@ -80,7 +80,15 @@ function savetoDb (data) {
 
 savetoDb("My Village")
     .then( ()=>{
-        console.log("promise resolved");
+        console.log("data1 saved");
+        return savetoDb("Play Cricket");
+    })
+    .then( ()=>{
+        console.log("data2 saved");
+        return savetoDb("Give your best");
+    })
+    .then( ()=>{
+        console.log("data3 saved");
     })
     .catch( ()=>{
         console.log("weak connection");
