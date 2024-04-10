@@ -77,3 +77,11 @@ function savetoDb (data) {
         }
     });
 }
+
+savetoDb("My Village")
+    .then( ()=>{
+        console.log("promise resolved");
+    })
+    .catch( ()=>{
+        console.log("weak connection");
+    });
