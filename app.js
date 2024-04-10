@@ -29,34 +29,34 @@
 
 // console.log("hello......");
 
- h1 = document.querySelector("h1");
+//  h1 = document.querySelector("h1");
 
-function changeColor(color, delay) {
-    return new Promise((resolve, reject)=>{
-        setTimeout(()=> {
-            h1.style.color = color;
-            resolve("color changed");
-        }, delay);
-    });
-}
+// function changeColor(color, delay) {
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=> {
+//             h1.style.color = color;
+//             resolve("color changed");
+//         }, delay);
+//     });
+// }
 
-changeColor("red", 1000)
-.then(()=>{
-    console.log("red color success");
-    return changeColor("yellow", 1000);
-})
-.then(()=>{
-    console.log("yellow color success");
-    return changeColor("gray", 1000);
-})
-.then(()=>{
-    console.log("gray success");
-    return changeColor("green", 1000);
-})
-.then(()=>{
-    console.log("green success");
-    return changeColor("green", 1000);
-});
+// changeColor("red", 1000)
+// .then(()=>{
+//     console.log("red color success");
+//     return changeColor("yellow", 1000);
+// })
+// .then(()=>{
+//     console.log("yellow color success");
+//     return changeColor("gray", 1000);
+// })
+// .then(()=>{
+//     console.log("gray success");
+//     return changeColor("green", 1000);
+// })
+// .then(()=>{
+//     console.log("green success");
+//     return changeColor("green", 1000);
+// });
 
 // changeColor("greenYellow", 1000, ()=> {
 //     changeColor("gray", 1000, ()=> {
@@ -117,3 +117,7 @@ changeColor("red", 1000)
 //         console.log("promised rejected");
 //         console.log(error);
 //     });
+
+function call() {
+    return "hello";
+}
