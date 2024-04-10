@@ -118,6 +118,6 @@
 //         console.log(error);
 //     });
 
-function call() {
+async function call() {
     return "hello";
 }
