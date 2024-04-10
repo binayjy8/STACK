@@ -122,3 +122,13 @@ async function call() {
     throw "random error";
     return "hello";
 }
+
+call()
+.then((result)=>{
+    console.log("promised resolved");
+    console.log(result);
+})
+.catch((err)=>{
+    console.log("promised rejected");
+    console.log(err);
+});
