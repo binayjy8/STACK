@@ -119,7 +119,7 @@
 //     });
 
 async function call() {
-    throw "random error";
+    // throw "random error";
     return "hello";
 }
 
