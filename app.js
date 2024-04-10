@@ -44,32 +44,32 @@
 //     });
 // });
 
-function savetoDb (data, success, failure) {
-    let internetSpeed = Math.floor( Math.random () * 10 ) + 1;
-    if(internetSpeed > 4 ) {
-        success();
-    } else {
-        failure();
-    }
-}
 
-savetoDb("apna college", ()=>{
-    console.log("success data saved");
-    savetoDb("hello world", ()=> {
-        console.log("success2 data saved");
-        savetoDb("binay", ()=> {
-            console.log("success3 data saved");
-            savetoDb("khuntapingu", ()=> {
-                console.log("success4");
-            }, ()=> {
-                console.log("bad connection");
-            })
-        }, ()=> {
-            console.log("weak3 connection failed");
-        })
-    }, ()=> {
-        console.log("weak2 data not saved");
-    })
-}, ()=> {
-    console.log("weak connection data not saved")
-});
+
+// savetoDb("apna college", ()=>{
+//     console.log("success data saved");
+//     savetoDb("hello world", ()=> {
+//         console.log("success2 data saved");
+//         savetoDb("binay", ()=> {
+//             console.log("success3 data saved");
+//             savetoDb("khuntapingu", ()=> {
+//                 console.log("success4");
+//             }, ()=> {
+//                 console.log("bad connection");
+//             })
+//         }, ()=> {
+//             console.log("weak3 connection failed");
+//         })
+//     }, ()=> {
+//         console.log("weak2 data not saved");
+//     })
+// }, ()=> {
+//     console.log("weak connection data not saved")
+// });
+
+function savetoDb (data, success, failure) {
+    return new Promise( (resolve, reject)=>{
+        let internetSpeed = Math.floor(Math.random() * 10) + 1;
+        if(internetSpeed > 4) {}
+    });
+}
