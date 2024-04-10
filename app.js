@@ -71,25 +71,29 @@ function savetoDb (data) {
     return new Promise( (resolve, reject)=>{
         let internetSpeed = Math.floor(Math.random() * 10) + 1;
         if(internetSpeed > 4) {
-            resolve("success: data saved");
+            resolve("success: data was saved");
         } else {
-            reject("weak connection");
+            reject("weak connection speed slow");
         }
     });
 }
 
 savetoDb("My Village")
-    .then( ()=>{
+    .then( (result)=>{
         console.log("data1 saved");
+        console.log(result);
         return savetoDb("Play Cricket");
     })
-    .then( ()=>{
+    .then( (result)=>{
         console.log("data2 saved");
+        console.log(result);
         return savetoDb("Give your best");
     })
-    .then( ()=>{
+    .then( (result)=>{
         console.log("data3 saved");
+        console.log(result);
     })
-    .catch( ()=>{
-        console.log("weak connection");
+    .catch( (error)=>{
+        console.log("promised rejected");
+        console.log(error);
     });
