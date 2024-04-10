@@ -67,7 +67,7 @@
 //     console.log("weak connection data not saved")
 // });
 
-function savetoDb (data, success, failure) {
+function savetoDb (data) {
     return new Promise( (resolve, reject)=>{
         let internetSpeed = Math.floor(Math.random() * 10) + 1;
         if(internetSpeed > 4) {
