@@ -118,23 +118,36 @@
 //         console.log(error);
 //     });
 
+// async function call() {
+//     // throw "random error";
+//     return "hello";
+// }
+
+// call()
+// .then((result)=>{
+//     console.log("promised resolved");
+//     console.log(result);
+// })
+// .catch((err)=>{
+//     console.log("promised rejected");
+//     console.log(err);
+// });
+
+// let hello = async ()=>{
+//     return "namaste";
+// }
+
+function getNum() {
+    return new Promise ((resolve, reject)=>{
+        setTimeout(()=>{
+            let num = Math.floor(Math.random() *10  )+ 1;
+            console.log(num);
+            resolve();
+        },2000);
+    });
+}
+
 async function call() {
-    // throw "random error";
-    return "hello";
+    await getNum();
+    getNum();
 }
-
-call()
-.then((result)=>{
-    console.log("promised resolved");
-    console.log(result);
-})
-.catch((err)=>{
-    console.log("promised rejected");
-    console.log(err);
-});
-
-let hello =async ()=>{
-    return "namaste";
-}
-
-hello();
