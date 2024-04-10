@@ -29,16 +29,18 @@
 
 // console.log("hello......");
 
-// h1 = document.querySelector("h1");
+ h1 = document.querySelector("h1");
 
 function changeColor(color, delay) {
-    new Promise((resolve, reject)=>{
+    return new Promise((resolve, reject)=>{
         setTimeout(()=> {
             h1.style.color = color;
             resolve("color changed");
         }, delay);
     });
 }
+
+
 
 // changeColor("greenYellow", 1000, ()=> {
 //     changeColor("gray", 1000, ()=> {
