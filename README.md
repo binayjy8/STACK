@@ -1,1 +1,1 @@
-Binay bhusan mohanta and the moment and ki
+Binay bhusan mohanta and the moment and k
