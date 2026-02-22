@@ -1,1 +1,1 @@
-Binay bhusan mohanta and the moment and kindnes
+Binay bhusan mohanta and the moment and kindness
